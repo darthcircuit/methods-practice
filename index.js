@@ -56,13 +56,13 @@ console.log(four);
 function formatName(firstName, lastName) {
   return (
     firstName[0].toUpperCase() +
-    firstName.slice(1) +
+    firstName.slice(1).toLowerCase() +
     " " +
     lastName[0].toUpperCase() +
     "."
   );
 }
 
-const my_name = formatName("john", "ipson");
+const my_name = formatName("JOHN", "ipson");
 
 console.log(my_name);
